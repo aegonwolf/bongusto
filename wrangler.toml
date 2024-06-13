@@ -1,11 +1,5 @@
-name = "svelte-worker"
-type = "webpack"
-account_id = ""
-workers_dev = true
-route = ""
-zone_id = ""
-webpack_config = "./workers-site/webpack.config.js"
-compatibility_flags = [ "nodejs_compat" ]
-[site]
-bucket = "./public"
-entry-point = "workers-site"
+name = "bongustomain"
+type = "javascript"
+
+[env.production]
+node_version = "18.18.0"
