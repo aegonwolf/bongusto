@@ -1,5 +1,10 @@
 name = "bongustomain"
 type = "javascript"
 
+[build]
+command = "npm run build"
+cwd = "."
+output_directory = "build"
+
 [env.production]
 node_version = "18.18.0"
