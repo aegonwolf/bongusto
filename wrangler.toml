@@ -5,7 +5,7 @@ workers_dev = true
 route = ""
 zone_id = ""
 webpack_config = "./workers-site/webpack.config.js"
-
+compatibility_flags = [ "nodejs_compat" ]
 [site]
 bucket = "./public"
 entry-point = "workers-site"
