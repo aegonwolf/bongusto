@@ -31,15 +31,17 @@
 
     <!-- Block 2: Catering Events -->
     <div class="relative mx-auto mt-48 w-full max-w-lg sm:max-w-xl lg:mx-0 lg:mt-32 lg:max-w-none">
-      <!-- Image with Stats -->
+      <!-- Video with Stats -->
       <div class="right-0 top-1/2 z-10 w-full lg:absolute lg:w-1/2 lg:-translate-y-1/2">
-        <img src="images/kp24.gif" class="h-auto w-full" alt="Catering Events"/>
+        <video src="/kp24.mp4" class="h-auto w-full" autoplay muted loop playsinline>
+          Your browser does not support the video tag.
+        </video>
         <div class="absolute left-0 top-0 w-64 -translate-y-24 bg-gray-secondary-100/95 p-6 backdrop-blur-sm sm:py-7 lg:bottom-0 lg:left-[unset] lg:right-0 lg:top-[unset] lg:translate-y-24 2xl:translate-x-16">
           <p class="text-4xl font-semibold text-slate-900 xl:text-5xl">500+</p>
           <p class="mt-5 text-slate-700">Events Catered</p>
         </div>
       </div>
-
+    
       <!-- Content -->
       <div class="w-full border border-gray-secondary-400/60 bg-gray-secondary-50 px-6 py-10 sm:p-14 lg:w-7/12 lg:py-32 lg:pr-28 xl:pl-16 xl:pr-36">
         <h2 class="text-4xl font-semibold leading-tight text-slate-900 xl:text-5xl xl:leading-tight">
@@ -53,6 +55,7 @@
         </a>
       </div>
     </div>
+    
 
     <!-- Block 3: Delivery & Vending Machines -->
     <div class="relative mx-auto mt-48 w-full max-w-lg sm:max-w-xl lg:mx-0 lg:mt-32 lg:max-w-none">
