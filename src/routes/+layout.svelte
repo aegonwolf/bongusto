@@ -18,7 +18,7 @@
     <!-- AlpineJS -->
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   
-    <link rel="icon" type="image/ico" href="/images/favicon.ico" />
+    <link rel="icon" type="image/ico" href="/favicon.ico" />
   
     <title>Gelateria Bongusto - Swiss Gelato</title>
     <meta

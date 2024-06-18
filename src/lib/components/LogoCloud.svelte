@@ -20,11 +20,11 @@
         <li class="flex grayscale opacity-80 justify-center sm:col-span-2 lg:col-span-1">
           <img src="images/logos/saentispark.svg" alt="Säntis Park" />
         </li>
-        <li class="flex justify-center sm:col-span-3 lg:col-span-1">
-          <img src="images/logos/quartz.svg" alt="Quartz" />
+        <li class="flex justify-center opacity-50 grayscale sm:col-span-3 lg:col-span-1">
+          <img src="images/logos/glattpark.svg" alt="Quartz" />
         </li>
-        <li class="flex justify-center sm:col-span-3 lg:col-span-1">
-          <img src="images/logos/wired.svg" alt="Wired" />
+        <li class="flex justify-center opacity-50 sm:col-span-3 lg:col-span-1">
+          <img src="images/logos/zeltwerk.png" alt="Wired" />
         </li>
       </ul>
     </div>
