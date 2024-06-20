@@ -16,18 +16,12 @@
       imgSrc: "images/avatars/brigitte.png",
       favoriteFlavor: "Pistachio"
     },
-    {
-      name: "Oliver",
-      role: "ML Engineer and Administrator",
-      description: "",
-      imgSrc: "images/avatars/oli.png",
-      favoriteFlavor: "Vanilla"
-    },
+    
     {
       name: "ETH Zurich Friends",
       role: "Supportive Community",
       description: "",
-      imgSrc: "images/avatars/team-03.jpg",
+      imgSrc: "images/avatars/ethfriends.png",
       favoriteFlavor: "Mango"
     },
     {
@@ -50,6 +44,13 @@
       description: "",
       imgSrc: "images/avatars/janis.png",
       favoriteFlavor: "Coconut"
+    },
+    {
+      name: "Oliver",
+      role: "ML Engineer and Administrator",
+      description: "",
+      imgSrc: "images/avatars/oli.png",
+      favoriteFlavor: "Vanilla"
     },
     {
       name: "Esha",
