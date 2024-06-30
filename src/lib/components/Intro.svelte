@@ -58,7 +58,8 @@
               </g>
             </svg>
             <p class="relative">
-              "The best ice cream I've ever had. I can't wait to have it again."
+              "The best ice cream in town. 
+              A must try in Zurich."
             </p>
           </div>
           <div class="mt-7 flex items-center">
@@ -66,8 +67,8 @@
               <img class="h-full w-full rounded-full object-cover object-center" width="56" src="images/avatars/avatar-01.jpg" alt="Home Hero Testimonial" />
             </div>
             <div class="ml-5">
-              <p class="font-medium text-slate-900">Courtland Allen</p>
-              <p class="font-medium text-slate-500">Indie Hackers Podcast</p>
+              <p class="font-medium text-slate-900">Ulysses Ramage</p>
+              <p class="font-medium text-slate-500">Local Guide</p>
             </div>
           </div>
         </blockquote>

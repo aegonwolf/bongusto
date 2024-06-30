@@ -17,11 +17,11 @@
       <!-- Content -->
       <div class="w-full border border-gray-secondary-400/60 bg-gray-secondary-50 px-6 py-10 sm:p-14 lg:ml-auto lg:w-7/12 lg:py-32 lg:pl-28 xl:pl-36 xl:pr-20">
         <h2 class="text-4xl font-semibold leading-tight text-slate-900 xl:text-5xl xl:leading-tight">
-          Visit us in the most beuatiful locations
+          Visit us in the most beautiful locations
         </h2>
         <p class="mt-6 leading-relaxed text-slate-700 sm:mt-8 sm:text-lg sm:leading-8">
           Experience our gelato at our various locations across Switzerland,
-           including our home at Saentispark.
+           Zürich, St. Gallen, Rorschach.
         </p>
         <a href="/locations" class="group mt-10 inline-flex items-center justify-center border border-slate-800 px-5 py-2.5 text-base font-medium text-slate-800 duration-150 ease-in-out hover:bg-slate-800 hover:text-white sm:mt-12">
           Find a Location
@@ -48,12 +48,18 @@
           Bring Gelato to Your Event
         </h2>
         <p class="mt-6 leading-relaxed text-slate-700 sm:mt-8 sm:text-lg sm:leading-8">
-          Our mobile "carretino" is perfect for any occasion, from corporate events to festivals. Let us make your event unforgettable.
+          Make your event unforgettable with Bongusto Catering. 
+          From our charming "carretino" to trailers, ice cream carts, 
+          and flexible, portable table displays, 
+          we have the perfect setup for any occasion. 
+          We also offer self-serve fridges with prefilled cups for convenient 
+          and enjoyable service at corporate events, festivals, and more.
         </p>
         <a href="/catering" class="group mt-10 inline-flex items-center justify-center border border-slate-800 px-5 py-2.5 text-base font-medium text-slate-800 duration-150 ease-in-out hover:bg-slate-800 hover:text-white sm:mt-12">
           Book Now
         </a>
       </div>
+      
     </div>
     
 
@@ -74,7 +80,9 @@
           Convenient Gelato Solutions
         </h2>
         <p class="mt-6 leading-relaxed text-slate-700 sm:mt-8 sm:text-lg sm:leading-8">
-          Enjoy our gelato at your office or any location with our delivery service and vending machines. Perfect for employees, customers, and more.
+          Enjoy Bongusto at your office or any 
+          location with our delivery service and vending machines. 
+          Perfect for employees, customers, and guests.
         </p>
         <a href="/vending.jpg" class="group mt-10 inline-flex items-center justify-center border border-slate-800 px-5 py-2.5 text-base font-medium text-slate-800 duration-150 ease-in-out hover:bg-slate-800 hover:text-white sm:mt-12">
           Get Started
