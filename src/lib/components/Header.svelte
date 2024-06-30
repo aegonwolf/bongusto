@@ -102,7 +102,7 @@
                     <a href="/saentispark" class="block px-3 py-3 font-medium text-slate-700 transition duration-300 ease-in-out hover:bg-amber-50 hover:text-slate-900">Säntispark</a>
                   </div>
                   <div class="mt-2">
-                    <a href="/eth-polyterasse" class="block px-3 py-3 font-medium text-slate-700 transition duration-300 ease-in-out hover:bg-amber-50 hover:text-slate-900">ETH Polyterasse</a>
+                    <a href="/polyterasse" class="block px-3 py-3 font-medium text-slate-700 transition duration-300 ease-in-out hover:bg-amber-50 hover:text-slate-900">ETH Polyterasse</a>
                   </div>
                   <div class="mt-2">
                     <a href="/glattpark" class="block px-3 py-3 font-medium text-slate-700 transition duration-300 ease-in-out hover:bg-amber-50 hover:text-slate-900">Glattpark</a>
