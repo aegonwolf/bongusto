@@ -46,7 +46,7 @@
               <!-- Pages dropdown -->
               <div class="absolute right-0 z-20 mt-3 w-52 space-y-1 bg-gray-secondary-50 p-2.5 outline-none drop-shadow filter">
                 <a href="/saentispark" class="block px-5 py-3.5 font-medium text-slate-700 transition duration-300 ease-in-out hover:bg-gray-secondary-100/60 hover:text-slate-900">Säntispark</a>
-                <a href="/eth-polyterasse" class="block px-5 py-3.5 font-medium text-slate-700 transition duration-300 ease-in-out hover:bg-gray-secondary-100/60 hover:text-slate-900">ETH Polyterasse</a>
+                <a href="/polyterasse" class="block px-5 py-3.5 font-medium text-slate-700 transition duration-300 ease-in-out hover:bg-gray-secondary-100/60 hover:text-slate-900">ETH Polyterasse</a>
                 <a href="/glattpark" class="block px-5 py-3.5 font-medium text-slate-700 transition duration-300 ease-in-out hover:bg-gray-secondary-100/60 hover:text-slate-900">Glattpark</a>
                 <a href="/rorschach" class="block px-5 py-3.5 font-medium text-slate-700 transition duration-300 ease-in-out hover:bg-gray-secondary-100/60 hover:text-slate-900">Rorschach</a>
               </div>
