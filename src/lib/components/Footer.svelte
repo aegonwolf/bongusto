@@ -9,9 +9,8 @@
   
           <!-- Mission statement -->
           <p class="mt-10 text-md leading-relaxed text-slate-50">
-            Lorem ipsum dolor sit amet aliqua rhoncus turpis. Justo adipiscing
-            aliqua congue porttitor scelerisque gravida facilisi sodales
-            congue fusce quam diam mi.
+            Gelateria Bongusto. 
+            Here is how you can reach out to us. We're open for anything and love to hear from you.
           </p>
   
           <!-- Social media links -->
@@ -88,40 +87,39 @@
         <div class="mt-12 grid grid-cols-12 gap-8 lg:col-span-8 lg:mt-0">
           <!-- Column 1 -->
           <div class="col-span-6 md:col-span-3">
-            <p class="text-md font-semibold text-white">Company</p>
+            <p class="text-md font-semibold text-white">Gelateria</p>
             <div class="mt-4 flex flex-col space-y-3">
               <a href="/about" class="text-md text-slate-100 duration-150 hover:text-white">About us</a>
-              <a href="#" class="text-md text-slate-100 duration-150 hover:text-white">Careers</a>
-              <a href="#" class="text-md text-slate-100 duration-150 hover:text-white">Customers</a>
-              <a href="#" class="text-md text-slate-100 duration-150 hover:text-white">Privacy</a>
+              <a href="/careers" class="text-md text-slate-100 duration-150 hover:text-white">Careers</a>
+              <a href="/testimonials" class="text-md text-slate-100 duration-150 hover:text-white">Customers</a>
+              <!-- <a href="#" class="text-md text-slate-100 duration-150 hover:text-white">Privacy</a> -->
               <a href="/contact" class="text-md text-slate-100 duration-150 hover:text-white">Contact us</a>
             </div>
           </div>
   
           <!-- Column 2 -->
           <div class="col-span-6 md:col-span-3">
-            <p class="text-md font-semibold text-white">Solutions</p>
+            <p class="text-md font-semibold text-white">Bongusto For You</p>
             <div class="mt-4 flex flex-col space-y-3">
-              <a href="#" class="text-md text-slate-100 duration-150 hover:text-white">For small creators</a>
-              <a href="#" class="text-md text-slate-100 duration-150 hover:text-white">For professionals</a>
-              <a href="#" class="text-md text-slate-100 duration-150 hover:text-white">For large companies</a>
-              <a href="#" class="text-md text-slate-100 duration-150 hover:text-white">Webinars</a>
-              <a href="#" class="text-md text-slate-100 duration-150 hover:text-white">Live shows</a>
-              <a href="#" class="text-md text-slate-100 duration-150 hover:text-white">Virtual conferences</a>
+              <a href="#" class="text-md text-slate-100 duration-150 hover:text-white">Catering for your event</a>
+              <a href="#" class="text-md text-slate-100 duration-150 hover:text-white">Vending Machines</a>
+              <a href="#" class="text-md text-slate-100 duration-150 hover:text-white">Self serve fridges</a>
+              <a href="#" class="text-md text-slate-100 duration-150 hover:text-white">Take away</a>
+              <a href="/contact" class="text-md text-slate-100 duration-150 hover:text-white">Special requests</a>
             </div>
           </div>
   
           <!-- Column 3 -->
           <div class="col-span-6 md:col-span-3">
-            <p class="text-md font-semibold text-white">Integrations</p>
+            <p class="text-md font-semibold text-white">Standorte</p>
             <div class="mt-4 flex flex-col space-y-3">
-              <a href="#" class="text-md text-slate-100 duration-150 hover:text-white">Youtube</a>
-              <a href="#" class="text-md text-slate-100 duration-150 hover:text-white">Facebook</a>
-              <a href="#" class="text-md text-slate-100 duration-150 hover:text-white">Twitter</a>
-              <a href="#" class="text-md text-slate-100 duration-150 hover:text-white">Spotify</a>
-              <a href="#" class="text-md text-slate-100 duration-150 hover:text-white">Tiktok</a>
-              <a href="#" class="text-md text-slate-100 duration-150 hover:text-white">Apple Podcasts</a>
-              <a href="#" class="text-md text-slate-100 duration-150 hover:text-white">Google Podcasts</a>
+              <a href="/saentispark" class="text-md text-slate-100 duration-150 hover:text-white">Säntispark</a>
+              <a href="/polyterasse" class="text-md text-slate-100 duration-150 hover:text-white">ETH Polyterasse</a>
+              <a href="/glattpark" class="text-md text-slate-100 duration-150 hover:text-white">Glattpark</a>
+              <a href="/rorschach" class="text-md text-slate-100 duration-150 hover:text-white">Zeltwerk Rorschach</a>
+              <a href="/sph" class="text-md text-slate-100 duration-150 hover:text-white">ETH Student Project House</a>
+              <!-- <a href="#" class="text-md text-slate-100 duration-150 hover:text-white">Apple Podcasts</a> -->
+              <!-- <a href="#" class="text-md text-slate-100 duration-150 hover:text-white">Google Podcasts</a> -->
             </div>
           </div>
   
@@ -129,12 +127,12 @@
           <div class="col-span-6 md:col-span-3">
             <p class="text-md font-semibold text-white">Resources</p>
             <div class="mt-4 flex flex-col space-y-3">
-              <a href="#" class="text-md text-slate-100 duration-150 hover:text-white">Blog</a>
-              <a href="#" class="text-md text-slate-100 duration-150 hover:text-white">Tutorials</a>
-              <a href="#" class="text-md text-slate-100 duration-150 hover:text-white">FAQ</a>
+              <a href="/flavors" class="text-md text-slate-100 duration-150 hover:text-white">Flavors</a>
+              <a href="/sizes" class="text-md text-slate-100 duration-150 hover:text-white">Sizes</a>
+              <!-- <a href="#" class="text-md text-slate-100 duration-150 hover:text-white">FAQ</a>
               <a href="/pricing" class="text-md text-slate-100 duration-150 hover:text-white">Pricing</a>
               <a href="#" class="text-md text-slate-100 duration-150 hover:text-white">Case studies</a>
-              <a href="#" class="text-md text-slate-100 duration-150 hover:text-white">Help center</a>
+              <a href="#" class="text-md text-slate-100 duration-150 hover:text-white">Help center</a> -->
             </div>
           </div>
         </div>
