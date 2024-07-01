@@ -186,18 +186,59 @@
 
             <!-- Free Pricing -->
             <div class="relative mx-auto mt-12 max-w-lg border border-gray-secondary-400/60 bg-gray-secondary-50 p-8 sm:max-w-xl sm:p-12 md:max-w-2xl lg:max-w-5xl">
-                <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
-                    <div class="w-full lg:w-3/5">
-                        <h3 class="text-lg font-semibold text-slate-900">Free Consultation</h3>
-                        <p class="mt-4 text-slate-600">
-                            Not sure which plan is right for you? Contact us for a free consultation and let us help you create the perfect catering experience for your event.
-                        </p>
+                <div class="flex flex-col lg:flex-row lg:items-start lg:space-x-8">
+                  <div class="w-full lg:w-1/2">
+                    <h3 class="text-lg font-semibold text-slate-900">Taste before you buy</h3>
+                    <p class="mt-4 text-slate-600">
+                      Not sure which catering plan to choose? Let us help you craft the perfect gelato experience! Contact us for a free consultation, and together we'll find the ideal sweet treat for your event.
+                    </p>
+                  </div>
+                  <form action="https://api.staticforms.xyz/submit" method="post" class="w-full lg:w-1/2 space-y-4 mt-8 lg:mt-0">
+                    <!-- Replace with accessKey sent to your email -->
+                    <input type="hidden" name="accessKey" value="773800d3-eb8c-4eae-9fe5-9b8165c10c00"> <!-- Required -->
+                    
+                    <div>
+                      <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                      <input type="text" name="name" id="name" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Your name">
                     </div>
-                    <a href="signup.html" class="group mt-8 inline-flex items-center justify-center border border-slate-800 px-6 py-3 text-base font-medium text-slate-800 duration-150 ease-in-out hover:bg-slate-800 hover:text-white lg:mt-0 xl:px-7 xl:py-4 xl:text-lg" variant="ghost">
-                        Get Started
-                    </a>
+                    
+                    <div>
+                      <label for="subject" class="block text-sm font-medium text-gray-700">Subject</label>
+                      <input type="text" name="subject" id="subject" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Subject">
+                    </div>
+                    
+                    <div>
+                      <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                      <input type="text" name="email" id="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Your email">
+                    </div>
+                    
+                    <div>
+                      <label for="phone" class="block text-sm font-medium text-gray-700">Phone</label>
+                      <input type="text" name="phone" id="phone" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Your phone number">
+                    </div>
+                    
+                    <div>
+                      <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                      <textarea name="message" id="message" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Your message"></textarea>
+                    </div>
+                  
+                    <!-- If you want replyTo to be set to specific email -->
+                    <input type="hidden" name="replyTo" value="info@bongusto.me"> <!-- Optional -->
+                    <!-- Specify @ as reply to value if you want it to be customers email -->
+                    <input type="hidden" name="replyTo" value="@"> <!-- Optional -->
+                    <!-- If you want form to redirect to a specific url after submission -->
+                    <input type="hidden" name="redirectTo" value="https://bongusto.me"> <!-- Optional -->
+                    
+                    <div>
+                      <button type="submit" class="group inline-flex w-full items-center justify-center border border-slate-800 px-5 py-2.5 text-base font-medium text-slate-800 duration-150 ease-in-out hover:bg-slate-800 hover:text-white lg:w-auto">
+                        Send message
+                      </button>
+                    </div>
+                  </form>
                 </div>
-            </div>
+              </div>
+              
+              
         </div>
     </div>
 

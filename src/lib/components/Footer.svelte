@@ -141,12 +141,12 @@
   
       <div class="flex w-full flex-col justify-between pt-8 sm:flex-row">
         <p class="text-md text-slate-200">
-          © 2024 Wavvy, Inc. All rights reserved.
+          © 2024 Gelateria Bongusto AG. All rights reserved.
         </p>
         <div class="mt-5 flex gap-3 sm:mt-0">
-          <a href="#" class="text-md text-slate-100 underline duration-150 hover:text-white">Terms</a>
+          <!-- <a href="#" class="text-md text-slate-100 underline duration-150 hover:text-white">Terms</a>
           <a href="#" class="text-md text-slate-100 underline duration-150 hover:text-white">Privacy</a>
-          <a href="#" class="text-md text-slate-100 underline duration-150 hover:text-white">Cookies</a>
+          <a href="#" class="text-md text-slate-100 underline duration-150 hover:text-white">Cookies</a> -->
         </div>
       </div>
     </div>
