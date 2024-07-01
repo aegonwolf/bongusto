@@ -56,10 +56,12 @@
       </div>
 
       <div class="flex items-center space-x-4">
+        <!--
         <div class="hidden lg:block">
           <a href="/signin" class="inline-block px-4 py-2 font-medium text-slate-700 hover:bg-amber-50 hover:text-slate-900">Sign in</a>
         </div>
         <a class="group inline-flex items-center justify-center bg-slate-700 px-5 py-2.5 text-base font-medium text-white duration-150 ease-in-out hover:bg-slate-900" href="/signup">Sign up free</a>
+        -->
         <div class="md:hidden">
           <button class="toggle-mobile-menu group relative z-50 flex cursor-pointer items-center justify-center border border-gray-secondary-400/75 bg-gray-secondary-50 p-3 transition duration-300 ease-in-out focus:outline-none" aria-label="Toggle Navigation" on:click={() => mobileMenuOpen = !mobileMenuOpen}>
             <span class="relative h-3.5 w-4">
@@ -113,9 +115,11 @@
                 </div>
               {/if}
             </div>
+            <!--
             <div class="mt-6">
               <a href="/signin" class="group inline-flex w-full items-center justify-center border border-slate-800 px-5 py-2.5 text-base font-medium text-slate-800 duration-150 ease-in-out hover:bg-slate-800 hover:text-white">Sign in</a>
             </div>
+            -->
           </div>
         </div>
       </div>
