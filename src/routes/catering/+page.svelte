@@ -29,33 +29,36 @@
                     <p class="mt-4 text-slate-600">
                         Perfect for intimate gatherings and small parties.
                     </p>
+                    <!-- Added image -->
+                    <img src="images/catering/dreier.jpg" alt="Catering Image" class="mt-4 w-full h-auto rounded-md shadow-md">
                     <p class="mt-12">
-                        <span class="text-4xl font-semibold text-slate-900">CHF 180</span>
-                        <span class="ml-2.5 text-lg font-medium text-slate-500">/ case with scooping service</span>
+                        <span class="text-4xl font-semibold text-slate-900">CHF 120</span>
+                        <span class="ml-2.5 text-lg font-medium text-slate-500">/ Case</span>
+                        <!-- <span class="ml-2.5 text-lg font-medium text-slate-500">/ case with scooping service</span> -->
                     </p>
-                    <p class="mt-2">
+                    <!-- <p class="mt-2">
                         <span class="text-4xl font-semibold text-slate-900">CHF 120</span>
                         <span class="ml-2.5 text-lg font-medium text-slate-500">/ case without scooping</span>
-                    </p>
+                    </p> -->
                     <a href="signup.html" class="group mt-8 inline-flex w-full items-center justify-center bg-slate-700 px-6 py-3 text-base font-medium text-white duration-150 ease-in-out hover:bg-slate-900 xl:px-7 xl:py-4 xl:text-lg">
                         Book Now
                     </a>
                     <hr class="my-10 border-gray-secondary-400/30" />
                     <p class="font-medium text-slate-900">Includes:</p>
-
+                
                     <!-- Features -->
                     <ul class="mt-6 space-y-4">
                         <li class="flex items-center space-x-6">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 shrink-0 text-slate-800">
                                 <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
                             </svg>
-                            <p class="text-slate-600">3 to 9 cases, each enough for 80 scoops</p>
+                            <p class="text-slate-600">3 to 9 cases (5 Litres), each enough for 80 scoops</p>
                         </li>
                         <li class="flex items-center space-x-6">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 shrink-0 text-slate-800">
                                 <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
                             </svg>
-                            <p class="text-slate-600">Includes scooping service</p>
+                            <p class="text-slate-600">Help yourself, scooping service optional</p>
                         </li>
                         <li class="flex items-center space-x-6">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 shrink-0 text-slate-800">
@@ -71,6 +74,7 @@
                         </li>
                     </ul>
                 </div>
+                
 
                 <!-- Medium Catering -->
                 <div class="bg-gray-secondary-50 p-8 sm:p-10">
@@ -78,16 +82,18 @@
                     <p class="mt-4 text-slate-600">
                         Ideal for medium-sized events and celebrations.
                     </p>
+                    <!-- Added image -->
+                    <img src="images/catering/carretino_catering.jpg" alt="Medium Catering Image" class="mt-4 w-full h-auto rounded-md shadow-md">
                     <p class="mt-12">
                         <span class="text-4xl font-semibold text-slate-900">CHF 180</span>
-                        <span class="ml-2.5 text-lg font-medium text-slate-500">/ case</span>
+                        <span class="ml-2.5 text-lg font-medium text-slate-500">/ Case</span>
                     </p>
                     <a href="signup.html" class="group mt-8 inline-flex w-full items-center justify-center bg-slate-700 px-6 py-3 text-base font-medium text-white duration-150 ease-in-out hover:bg-slate-900 xl:px-7 xl:py-4 xl:text-lg">
                         Book Now
                     </a>
                     <hr class="my-10 border-gray-secondary-400/30" />
                     <p class="font-medium text-slate-900">Includes:</p>
-
+                
                     <!-- Features -->
                     <ul class="mt-6 space-y-4">
                         <li class="flex items-center space-x-6">
@@ -122,6 +128,7 @@
                         </li>
                     </ul>
                 </div>
+                
 
                 <!-- Large Catering -->
                 <div class="bg-purple-light p-8 sm:p-10">
@@ -129,6 +136,8 @@
                     <p class="mt-4 text-slate-600">
                         Designed for large events and corporate functions.
                     </p>
+                    <!-- Added image -->
+                    <img src="images/polyterasse.jpg" alt="Large Catering Image" class="mt-4 w-full h-auto rounded-md shadow-md">
                     <p class="mt-12">
                         <span class="text-4xl font-semibold text-slate-900">Price on Request</span>
                     </p>
@@ -137,7 +146,7 @@
                     </a>
                     <hr class="my-10 border-gray-secondary-400/30" />
                     <p class="font-medium text-slate-900">Includes:</p>
-
+                
                     <!-- Features -->
                     <ul class="mt-6 space-y-4">
                         <li class="flex items-center space-x-6">
@@ -172,6 +181,7 @@
                         </li>
                     </ul>
                 </div>
+                
             </div>
 
             <!-- Free Pricing -->
