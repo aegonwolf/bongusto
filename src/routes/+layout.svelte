@@ -2,9 +2,20 @@
     import "../app.css";
     import Header from '../lib/components/Header.svelte';
     import Footer from '../lib/components/Footer.svelte';
-  </script>
-  
-  <svelte:head>
+    import { onMount } from 'svelte';
+
+    let ipInfo = {};
+
+    onMount(async () => {
+        const request = await fetch("https://ipinfo.io/json?token=cdd985fd4d9857");
+        const jsonResponse = await request.json();
+        ipInfo = jsonResponse;
+
+        console.log(ipInfo.ip, ipInfo.country);
+    });
+</script>
+
+<svelte:head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
@@ -25,10 +36,10 @@
       name="description"
       content="Gelateria Bongusto makes Swiss Handmade Gelato with love, locally sourced, and organic ingredients. Visit us in Zurich, and St. Gallen."
     />
-  </svelte:head>
-  
-  <body class="bg-gray-100 text-gray-900">
+</svelte:head>
+
+<body class="bg-gray-100 text-gray-900">
     <Header />
     <slot></slot>
     <Footer />
-  </body>
+</body>

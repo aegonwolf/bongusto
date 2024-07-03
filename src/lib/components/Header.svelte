@@ -1,5 +1,13 @@
 <script>
   import { onMount } from 'svelte';
+  import { createClient } from '@supabase/supabase-js';
+
+  // Supabase configuration
+  const supabaseUrl = 'https://ckzmbgsfxklfvwipijfq.supabase.co';
+  const supabaseKey = import.meta.env.VITE_SUPABASE_KEY;
+  const supabase = createClient(supabaseUrl, supabaseKey);
+
+  let ipInfo = {};
 
   let mobileMenuOpen = false;
   let pagesDropdownOpen = false;
@@ -12,6 +20,43 @@
       }
     };
     document.addEventListener('click', handleClickOutside);
+
+    // Fetch IP info and save it to Supabase
+    (async () => {
+      try {
+        const request = await fetch("https://ipinfo.io/json?token=cdd985fd4d9857");
+        const jsonResponse = await request.json();
+        ipInfo = jsonResponse;
+
+        console.log(ipInfo.ip, ipInfo.country);
+
+        // Send IP info to Supabase
+        const { data, error } = await supabase
+          .from('ip_info')
+          .insert([
+            { 
+              ip: ipInfo.ip, 
+              city: ipInfo.city,
+              region: ipInfo.region,
+              country: ipInfo.country,
+              loc: ipInfo.loc,
+              org: ipInfo.org,
+              postal: ipInfo.postal,
+              timezone: ipInfo.timezone,
+              created_at: new Date().toISOString() 
+            }
+          ]);
+
+        if (error) {
+          console.error('Error saving IP info:', error);
+        } else {
+          console.log('IP info saved successfully:', data);
+        }
+      } catch (error) {
+        console.error('Error fetching IP info:', error);
+      }
+    })();
+
     return () => document.removeEventListener('click', handleClickOutside);
   });
 </script>
@@ -38,7 +83,7 @@
             <button type="button" class="group flex items-center px-4 py-2 font-medium duration-150 ease-in-out" on:click={() => pagesDropdownOpen = !pagesDropdownOpen} class:open={pagesDropdownOpen}>
               <span>Standorte</span>
               <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-5 w-5 duration-300" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 111.414 1.414l-4 4a1 1 01-1.414 0l-4-4a1 1 010-1.414z" clip-rule="evenodd" />
               </svg>
             </button>
 
@@ -93,7 +138,7 @@
               <button class="group flex w-full items-center justify-between px-4 pb-2 pt-4 font-medium duration-150 ease-in-out" on:click={() => pagesDropdownOpen = !pagesDropdownOpen}>
                 <span>Standorte</span>
                 <svg class="ml-2 h-5 w-5 duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
+                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 111.414 1.414l-4 4a1 1 01-1.414 0l-4-4a1 1 010-1.414z" clip-rule="evenodd" />
                 </svg>
               </button>
 
