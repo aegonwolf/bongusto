@@ -94,7 +94,7 @@
           <span>Our story</span>
         </p>
         <h1 class="mt-5 text-4xl font-semibold leading-snug text-slate-900 sm:max-w-xl sm:text-center sm:text-5xl sm:leading-snug md:mx-auto xl:mx-0">
-          Creating delightful gelato experiences since 1980
+          We are passionate about enjoying life and gelato.
         </h1>
       </div>
   
@@ -102,10 +102,10 @@
       <div class="mt-12 flex flex-col md:mt-8 md:flex-row md:divide-x md:divide-gray-secondary-400/60">
         <div class="md:w-1/2 md:py-8 md:pr-6 lg:pr-16">
           <p class="text-lg leading-relaxed text-slate-700">
-            Gelataria Bongusto is a family-owned business founded by Hansi and Brigitte, a couple who have been married for over 40 years and share a deep passion for making gelato. Alongside their children and friends from ETH Zurich, they craft each batch of gelato with love in St. Gallen.
+            Gelataria Bongusto is a family-owned business founded by Hansi and Brigitte, a couple who have been married for over 40 years and share a deep passion for making gelato. Alongside their children and friends from ETH Zurich, they personally craft each batch of gelato with love in St. Gallen.
           </p>
           <p class="mt-8 text-lg leading-relaxed text-slate-700">
-            Oliver, an ML Engineer from ETH Zurich, manages the organization and administration, ensuring that our operations run smoothly and efficiently.
+            Oliver, an ML Engineer from ETH Zurich, joined as a good friend of Hansi's to support in adminstration and expansion with the help of ETH Zurich.
           </p>
         </div>
         <div class="mt-8 sm:mt-0 md:w-1/2 md:py-8 md:pl-6 lg:pl-16">
@@ -125,7 +125,7 @@
       <div class="relative mt-16 sm:mt-20">
         <!-- Image -->
         <div class="aspect-video">
-          <img class="h-full w-full object-cover object-center" src="images/stock/team.jpg" alt="Team" />
+          <img class="h-full w-full object-cover" src="images/about/hnbcar.jpeg" alt="Team" />
         </div>
   
         <!-- Stats -->
@@ -196,10 +196,12 @@
                 <path d="M52.775 32.735C43.931 28.066 30.225 33.01 24.975 37.795C24.636 37.253 24.214 36.643 23.74 35.958C22.22 33.758 20.328 31.024 19.754 28.482C19.3127 25.6915 19.088 22.8711 19.082 20.046C19.8457 20.1458 20.6196 20.1405 21.382 20.03C21.416 20.024 21.451 20.018 21.482 20.01C22.719 19.7 26.5 17.974 27.672 16C28.1742 15.2523 28.4236 14.3633 28.3836 13.4635C28.3437 12.5636 28.0165 11.7003 27.45 11C28.0001 9.64425 28.2557 8.18705 28.2 6.725C28.2014 6.17523 28.0871 5.63133 27.8643 5.12872C27.6415 4.62612 27.3153 4.1761 26.907 3.808C24.957 2.215 21.348 2 18.074 2C10.813 2 6.38996 20.582 4.82396 28.571C2.18696 42.041 6.50196 54.808 8.92396 57.291C12.25 60.699 19.842 60.808 23.657 60.368C25.982 61.411 30.418 62 35.846 62C36.4993 62 37.166 61.9917 37.846 61.975C46.222 61.765 53.046 58.935 55.584 57.083C57.3228 55.803 58.7243 54.1195 59.6678 52.1774C60.6113 50.2354 61.0685 48.093 61 45.935C60.856 40.775 57.965 36.1 52.775 32.735ZM50.288 46.035C46.4048 48.3551 41.9624 49.5721 37.439 49.555C35.2973 49.5523 33.1635 49.2941 31.083 48.786C30.8315 48.7178 30.6166 48.5542 30.4839 48.3299C30.3513 48.1057 30.3114 47.8385 30.3728 47.5853C30.4342 47.3321 30.592 47.1128 30.8126 46.9742C31.0332 46.8355 31.2992 46.7885 31.554 46.843C37.5572 48.3739 43.9223 47.4669 49.259 44.32C49.3716 44.2524 49.4964 44.2077 49.6263 44.1884C49.7562 44.1691 49.8886 44.1755 50.016 44.2073C50.1434 44.2392 50.2633 44.2958 50.3688 44.374C50.4743 44.4522 50.5634 44.5504 50.631 44.663C50.6985 44.7756 50.7432 44.9004 50.7626 45.0303C50.7819 45.1602 50.7755 45.2926 50.7436 45.42C50.7118 45.5474 50.6551 45.6673 50.5769 45.7728C50.4988 45.8783 50.4006 45.9674 50.288 46.035Z" fill="#9EADB2" />
               </svg>
               <h3 class="mt-8 text-3xl font-semibold leading-tighter text-white sm:mt-12">
-                Resilience
+                Quality
               </h3>
               <p class="mt-5 leading-relaxed text-slate-50 sm:mt-6">
-                We overcome challenges with strength and determination, ensuring that our gelato is always of the highest quality.
+                Fresh, organic ingredients are important to us. Each batch of gelato is personally made and tried, Brigitte makes sure nothing less
+                than perfect is shared with our customers.
+                Bongusto is the name and the motto.
               </p>
             </div>
           </div>
@@ -271,7 +273,7 @@
                 Self-improvement
               </h3>
               <p class="mt-5 leading-relaxed text-slate-50 sm:mt-6">
-                We are constantly striving to improve, ensuring that our gelato is always the best it can be.
+                We are constantly striving to improve, ourselves, the customer experience and the taste.
               </p>
             </div>
           </div>
