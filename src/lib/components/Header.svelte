@@ -1,6 +1,7 @@
 <script>
-  import { onMount } from 'svelte';
+  import { onMount, onDestroy } from 'svelte';
   import { createClient } from '@supabase/supabase-js';
+  import { page } from '$app/stores';
 
   // Supabase configuration
   const supabaseUrl = 'https://ckzmbgsfxklfvwipijfq.supabase.co';
@@ -18,8 +19,17 @@
       if (!event.target.closest('.mobile-menu') && !event.target.closest('.toggle-mobile-menu')) {
         mobileMenuOpen = false;
       }
+      if (!event.target.closest('.pages-dropdown') && !event.target.closest('.toggle-pages-dropdown')) {
+        pagesDropdownOpen = false;
+      }
     };
     document.addEventListener('click', handleClickOutside);
+
+    // Close dropdown when navigating to a new page
+    const unsubscribe = page.subscribe(() => {
+      pagesDropdownOpen = false;
+      mobileMenuOpen = false;
+    });
 
     // Fetch IP info and save it to Supabase
     (async () => {
@@ -57,7 +67,10 @@
       }
     })();
 
-    return () => document.removeEventListener('click', handleClickOutside);
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+      unsubscribe();
+    };
   });
 </script>
 
@@ -79,8 +92,8 @@
           <a href="/contact" class="inline-block px-4 py-2 font-medium text-slate-700 hover:bg-amber-50 hover:text-slate-900">Contact</a>
 
           <!-- Template pages dropdown container -->
-          <div class="relative">
-            <button type="button" class="group flex items-center px-4 py-2 font-medium duration-150 ease-in-out" on:click={() => pagesDropdownOpen = !pagesDropdownOpen} class:open={pagesDropdownOpen}>
+          <div class="relative pages-dropdown">
+            <button type="button" class="toggle-pages-dropdown group flex items-center px-4 py-2 font-medium duration-150 ease-in-out" on:click={() => pagesDropdownOpen = !pagesDropdownOpen} class:open={pagesDropdownOpen}>
               <span>Standorte</span>
               <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-5 w-5 duration-300" viewBox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 111.414 1.414l-4 4a1 1 01-1.414 0l-4-4a1 1 010-1.414z" clip-rule="evenodd" />
@@ -94,6 +107,7 @@
                 <a href="/polyterasse" class="block px-5 py-3.5 font-medium text-slate-700 transition duration-300 ease-in-out hover:bg-gray-secondary-100/60 hover:text-slate-900">ETH Polyterasse</a>
                 <a href="/glattpark" class="block px-5 py-3.5 font-medium text-slate-700 transition duration-300 ease-in-out hover:bg-gray-secondary-100/60 hover:text-slate-900">Glattpark</a>
                 <a href="/rorschach" class="block px-5 py-3.5 font-medium text-slate-700 transition duration-300 ease-in-out hover:bg-gray-secondary-100/60 hover:text-slate-900">Rorschach</a>
+                <a href="/niederdorf" class="block px-5 py-3.5 font-medium text-slate-700 transition duration-300 ease-in-out hover:bg-gray-secondary-100/60 hover:text-slate-900">Niederdorf</a>
               </div>
             {/if}
           </div>
@@ -134,8 +148,8 @@
             <a href="/contact" class="block px-4 pb-2 pt-4 font-medium text-slate-700 hover:bg-amber-50 hover:text-slate-900">Contact</a>
 
             <!-- Pages dropdown -->
-            <div class="relative">
-              <button class="group flex w-full items-center justify-between px-4 pb-2 pt-4 font-medium duration-150 ease-in-out" on:click={() => pagesDropdownOpen = !pagesDropdownOpen}>
+            <div class="relative pages-dropdown">
+              <button class="toggle-pages-dropdown group flex w-full items-center justify-between px-4 pb-2 pt-4 font-medium duration-150 ease-in-out" on:click={() => pagesDropdownOpen = !pagesDropdownOpen}>
                 <span>Standorte</span>
                 <svg class="ml-2 h-5 w-5 duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                   <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 111.414 1.414l-4 4a1 1 01-1.414 0l-4-4a1 1 010-1.414z" clip-rule="evenodd" />
@@ -156,6 +170,9 @@
                   </div>
                   <div class="mt-2">
                     <a href="/rorschach" class="block px-3 py-3 font-medium text-slate-700 transition duration-300 ease-in-out hover:bg-amber-50 hover:text-slate-900">Rorschach</a>
+                  </div>
+                  <div class="mt-2">
+                    <a href="/niederdorf" class="block px-3 py-3 font-medium text-slate-700 transition duration-300 ease-in-out hover:bg-amber-50 hover:text-slate-900">Niederdorf</a>
                   </div>
                 </div>
               {/if}
