@@ -125,7 +125,7 @@
       <div class="relative mt-16 sm:mt-20">
         <!-- Image -->
         <div class="aspect-video">
-          <img class="h-full w-full object-cover" src="images/about/hnbcar.jpeg" alt="Team" />
+          <img class="h-full w-full object-cover" src="images/about/team.jpg" alt="Team" />
         </div>
   
         <!-- Stats -->

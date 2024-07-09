@@ -16,7 +16,7 @@
     <div class="pb-10">
       <div class="relative mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div class="absolute bottom-0 right-6 hidden w-1/3 bg-gray-secondary-100 md:block lg:right-12 xl:-right-0 xl:w-full xl:max-w-xl 2xl:-right-32 2xl:max-w-[640px]">
-          <img src="images/niederdorf/line.jpg" class="h-auto w-full object-cover rounded-lg" alt="Glattpark Location Image" />
+          <img src="images/niederdorf/line.jpg" class="h-auto w-full object-cover rounded-lg" alt="Niederdorf Bongusto Cookies and Ice Cream" />
         </div>
       </div>
     </div>
