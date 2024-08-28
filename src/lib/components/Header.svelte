@@ -1,11 +1,21 @@
 <script>
   import { onMount, onDestroy } from 'svelte';
   import { page } from '$app/stores';
+  import { language } from '../stores/languages'; // Import the language store
 
   let mobileMenuOpen = false;
   let pagesDropdownOpen = false;
+  let currentLanguage = 'en';
 
-  // Close the mobile menu when clicking outside of it
+  // Subscribe to the language store
+  $: $language = currentLanguage;
+
+  // Function to toggle language
+  function toggleLanguage() {
+    currentLanguage = currentLanguage === 'en' ? 'de' : 'en';
+    language.set(currentLanguage);
+  }
+
   onMount(() => {
     const handleClickOutside = (event) => {
       if (!event.target.closest('.mobile-menu') && !event.target.closest('.toggle-mobile-menu')) {
@@ -17,7 +27,6 @@
     };
     document.addEventListener('click', handleClickOutside);
 
-    // Close dropdown when navigating to a new page
     const unsubscribe = page.subscribe(() => {
       pagesDropdownOpen = false;
       mobileMenuOpen = false;
@@ -42,15 +51,23 @@
         </a>
 
         <div class="hidden items-center space-x-3 md:flex lg:space-x-4">
-          <a href="/" class="inline-block px-4 py-2 font-medium text-slate-700 hover:bg-amber-50 hover:text-slate-900">Home</a>
-          <a href="/about" class="inline-block px-4 py-2 font-medium text-slate-700 hover:bg-amber-50 hover:text-slate-900">About</a>
-          <a href="/catering" class="inline-block px-4 py-2 font-medium text-slate-700 hover:bg-amber-50 hover:text-slate-900">Catering</a>
-          <a href="/contact" class="inline-block px-4 py-2 font-medium text-slate-700 hover:bg-amber-50 hover:text-slate-900">Contact</a>
+          <a href="/" class="inline-block px-4 py-2 font-medium text-slate-700 hover:bg-amber-50 hover:text-slate-900">
+            {$language === 'en' ? 'Home' : 'Startseite'}
+          </a>
+          <a href="/about" class="inline-block px-4 py-2 font-medium text-slate-700 hover:bg-amber-50 hover:text-slate-900">
+            {$language === 'en' ? 'About' : 'Über uns'}
+          </a>
+          <a href="/catering" class="inline-block px-4 py-2 font-medium text-slate-700 hover:bg-amber-50 hover:text-slate-900">
+            {$language === 'en' ? 'Catering' : 'Catering'}
+          </a>
+          <a href="/contact" class="inline-block px-4 py-2 font-medium text-slate-700 hover:bg-amber-50 hover:text-slate-900">
+            {$language === 'en' ? 'Contact' : 'Kontakt'}
+          </a>
 
           <!-- Template pages dropdown container -->
           <div class="relative pages-dropdown">
             <button type="button" class="toggle-pages-dropdown group flex items-center px-4 py-2 font-medium duration-150 ease-in-out" on:click={() => pagesDropdownOpen = !pagesDropdownOpen} class:open={pagesDropdownOpen}>
-              <span>Standorte</span>
+              <span>{$language === 'en' ? 'Locations' : 'Standorte'}</span>
               <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-5 w-5 duration-300" viewBox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 111.414 1.414l-4 4a1 1 01-1.414 0l-4-4a1 1 010-1.414z" clip-rule="evenodd" />
               </svg>
@@ -71,6 +88,10 @@
       </div>
 
       <div class="flex items-center space-x-4">
+        <button on:click={toggleLanguage} class="text-slate-700 hover:bg-amber-50 hover:text-slate-900 px-4 py-2 font-medium">
+          {$language === 'en' ? 'DE' : 'EN'}
+        </button>
+        
         <div class="md:hidden">
           <button class="toggle-mobile-menu group relative z-50 flex cursor-pointer items-center justify-center border border-gray-secondary-400/75 bg-gray-secondary-50 p-3 transition duration-300 ease-in-out focus:outline-none" aria-label="Toggle Navigation" on:click={() => mobileMenuOpen = !mobileMenuOpen}>
             <span class="relative h-3.5 w-4">
@@ -92,15 +113,23 @@
       <div class="absolute inset-x-0 top-24 z-30 overflow-hidden bg-amber-100 px-5 pb-8 pt-4 duration-300">
         <div>
           <div class="flex flex-col divide-y divide-gray-secondary-400/75">
-            <a href="/" class="block px-4 pb-2 pt-4 font-medium text-slate-700 hover:bg-amber-50 hover:text-slate-900">Home</a>
-            <a href="/about" class="block px-4 pb-2 pt-4 font-medium text-slate-700 hover:bg-amber-50 hover:text-slate-900">About</a>
-            <a href="/pricing" class="block px-4 pb-2 pt-4 font-medium text-slate-700 hover:bg-amber-50 hover:text-slate-900">Pricing</a>
-            <a href="/contact" class="block px-4 pb-2 pt-4 font-medium text-slate-700 hover:bg-amber-50 hover:text-slate-900">Contact</a>
+            <a href="/" class="block px-4 pb-2 pt-4 font-medium text-slate-700 hover:bg-amber-50 hover:text-slate-900">
+              {$language === 'en' ? 'Home' : 'Startseite'}
+            </a>
+            <a href="/about" class="block px-4 pb-2 pt-4 font-medium text-slate-700 hover:bg-amber-50 hover:text-slate-900">
+              {$language === 'en' ? 'About' : 'Über uns'}
+            </a>
+            <a href="/pricing" class="block px-4 pb-2 pt-4 font-medium text-slate-700 hover:bg-amber-50 hover:text-slate-900">
+              {$language === 'en' ? 'Pricing' : 'Preise'}
+            </a>
+            <a href="/contact" class="block px-4 pb-2 pt-4 font-medium text-slate-700 hover:bg-amber-50 hover:text-slate-900">
+              {$language === 'en' ? 'Contact' : 'Kontakt'}
+            </a>
 
             <!-- Pages dropdown -->
             <div class="relative pages-dropdown">
               <button class="toggle-pages-dropdown group flex w-full items-center justify-between px-4 pb-2 pt-4 font-medium duration-150 ease-in-out" on:click={() => pagesDropdownOpen = !pagesDropdownOpen}>
-                <span>Standorte</span>
+                <span>{$language === 'en' ? 'Locations' : 'Standorte'}</span>
                 <svg class="ml-2 h-5 w-5 duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                   <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 111.414 1.414l-4 4a1 1 01-1.414 0l-4-4a1 1 010-1.414z" clip-rule="evenodd" />
                 </svg>

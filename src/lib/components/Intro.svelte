@@ -1,8 +1,12 @@
+<script>
+  import { language } from '../stores/languages'; // Import the language store
+</script>
+
 <section class="relative overflow-hidden bg-amber-100 pt-16 md:pt-20 xl:pt-32">
   <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
     <div class="mx-auto max-w-lg pb-14 md:mx-0 md:max-w-none md:pb-48 lg:pb-52 xl:max-w-xl xl:pb-14">
       <h1 class="text-5xl font-semibold leading-tighter text-slate-900 md:mx-auto md:max-w-2xl md:text-center xl:mx-0 xl:text-left xl:text-6xl xl:leading-tighter">
-        Making Gelato Locally, with Love and Responsibility.
+        {$language === 'en' ? 'Making Gelato Locally, with Love and Responsibility.' : 'Wir machen Gelato lokal, mit Liebe und Verantwortung.'}
       </h1>
       <ul class="mt-6 flex flex-col space-y-4 md:mx-auto md:mt-8 md:max-w-3xl md:flex-row md:space-x-2 md:space-y-0 lg:space-x-4 xl:mx-0 xl:flex-col xl:space-x-0 xl:space-y-4">
         <li class="flex items-center md:items-start xl:items-center">
@@ -10,8 +14,8 @@
             <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
           </svg>
           <p class="ml-3 text-slate-700 lg:ml-4 xl:ml-5 xl:text-lg">
-            We love you.
-            <span class="font-medium text-slate-900">You'll love our ice cream.</span>
+            {$language === 'en' ? 'We love you.' : 'Wir lieben Sie.'}
+            <span class="font-medium text-slate-900">{$language === 'en' ? "You'll love our ice cream." : 'Sie werden unser Eis lieben.'}</span>
           </p>
         </li>
         <li class="flex items-center md:items-start xl:items-center">
@@ -19,8 +23,8 @@
             <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
           </svg>
           <p class="ml-3 text-slate-700 lg:ml-4 xl:ml-5 xl:text-lg">
-            Locally sourced, organic ingredients. 
-            <span class="font-medium text-slate-900">Responsible and sustainable.</span>
+            {$language === 'en' ? 'Locally sourced, organic ingredients.' : 'Lokal bezogene, biologische Zutaten.'}
+            <span class="font-medium text-slate-900">{$language === 'en' ? 'Responsible and sustainable.' : 'Verantwortlich und nachhaltig.'}</span>
           </p>
         </li>
         <li class="flex items-center md:items-start xl:items-center">
@@ -28,21 +32,21 @@
             <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
           </svg>
           <p class="ml-3 text-slate-700 lg:ml-4 xl:ml-5 xl:text-lg">
-            We love what we do, which is making people happy,
-            <span class="font-medium text-slate-900">with gelato.</span>
+            {$language === 'en' ? 'We love what we do, which is making people happy,' : 'Wir lieben, was wir tun, nämlich Menschen glücklich zu machen,'}
+            <span class="font-medium text-slate-900">{$language === 'en' ? 'with gelato.' : 'mit Gelato.'}</span>
           </p>
         </li>
       </ul>
       <div class="mt-10 flex flex-col sm:flex-row sm:space-x-5 md:mt-12 md:justify-center xl:justify-start">
         <a href="/catering" class="group inline-flex w-full items-center justify-center bg-slate-700 px-6 py-3 text-base font-medium text-white duration-150 ease-in-out hover:bg-slate-900 sm:w-auto xl:px-7 xl:py-4 xl:text-lg">
-          Book Us for Your Event!
+          {$language === 'en' ? 'Book Us for Your Event!' : 'Buchen Sie uns für Ihr Event!'}
         </a>
         <a href="/vending" class="group mt-3.5 inline-flex w-full items-center justify-center border border-slate-800 px-6 py-3 text-base font-medium text-slate-800 duration-150 ease-in-out hover:bg-slate-800 hover:text-white sm:mt-0 sm:w-auto xl:px-7 xl:py-4 xl:text-lg">
-          Gelato for Your Office
+          {$language === 'en' ? 'Gelato for Your Office' : 'Gelato für Ihr Büro'}
         </a>
       </div>
       <p class="mt-4 flex text-md text-slate-600/90 md:justify-center xl:justify-start xl:text-base">
-        Get a free quote and explore our solutions for your office, restaurant, cafe, or any other location where you want Bongusto.
+        {$language === 'en' ? 'Get a free quote and explore our solutions for your office, restaurant, cafe, or any other location where you want Bongusto.' : 'Holen Sie sich ein kostenloses Angebot und erkunden Sie unsere Lösungen für Ihr Büro, Restaurant, Café oder jeden anderen Ort, an dem Sie Bongusto haben möchten.'}
       </p>
     </div>
   </div>
@@ -58,8 +62,7 @@
               </g>
             </svg>
             <p class="relative">
-              "The best ice cream in town. 
-              A must try in Zurich."
+              {$language === 'en' ? '"The best ice cream in town. A must try in Zurich."' : '"Das beste Eis der Stadt. Ein Muss in Zürich."'}
             </p>
           </div>
           <div class="mt-7 flex items-center">
@@ -68,7 +71,7 @@
             </div>
             <div class="ml-5">
               <p class="font-medium text-slate-900">Ulysses Ramage</p>
-              <p class="font-medium text-slate-500">Local Guide</p>
+              <p class="font-medium text-slate-500">{$language === 'en' ? 'Local Guide' : 'Lokaler Führer'}</p>
             </div>
           </div>
         </blockquote>

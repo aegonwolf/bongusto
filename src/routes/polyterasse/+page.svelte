@@ -1,26 +1,45 @@
+<script>
+  import { language } from '$lib/stores/languages'; // Import the language store
+
+  let currentLanguage;
+
+  // Subscribe to the language store
+  const unsubscribe = language.subscribe(value => {
+    currentLanguage = value;
+  });
+
+  // Optional: Cleanup on destroy
+  import { onDestroy } from 'svelte';
+  onDestroy(() => {
+    unsubscribe();
+  });
+</script>
+
 <section class="relative overflow-hidden bg-amber-100 pt-16 md:pt-20 xl:pt-32">
-    <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 pb-5">
-        <div class="mx-auto max-w-lg pb-14 md:mx-0 md:max-w-none md:pb-48 lg:pb-52 xl:max-w-xl xl:pb-14">
-          <h2 class="text-4xl font-semibold leading-tighter text-slate-900 md:mx-auto md:max-w-2xl md:text-center xl:mx-0 xl:text-left xl:text-5xl xl:leading-tighter">
-            Visit Us at Polyterasse
-          </h2>
-          <p class="mt-6 text-slate-700 md:mx-auto md:mt-8 md:max-w-3xl md:text-center xl:mx-0 xl:text-left xl:text-lg">
-            Here is where it all started, being supported by ETH Zurich as a student project, Polyglace was Bongusto's first location in Zurich. 
-            ETH is our home and this spot is dear to us. Every summer, we bring some exam relief to students with our stand. 
-            12 flavors new each day, along with drinks and smoothies.
-          </p>
-        </div>
-      </div>
-      
-  
-    <div class="pb-10">
-      <div class="relative mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-        <div class="absolute bottom-0 right-6 hidden w-1/3 bg-gray-secondary-100 md:block lg:right-12 xl:-right-0 xl:w-full xl:max-w-xl 2xl:-right-32 2xl:max-w-[640px]">
-          <img src="images/polyterasse.jpg" class="h-auto w-full object-cover rounded-lg" alt="Glattpark Location Image" />
-        </div>
+  <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 pb-5">
+    <div class="mx-auto max-w-lg pb-14 md:mx-0 md:max-w-none md:pb-48 lg:pb-52 xl:max-w-xl xl:pb-14">
+      <h2 class="text-4xl font-semibold leading-tighter text-slate-900 md:mx-auto md:max-w-2xl md:text-center xl:mx-0 xl:text-left xl:text-5xl xl:leading-tighter">
+        {$language === 'en' ? 'Visit Us at Polyterasse' : 'Besuchen Sie uns auf der Polyterrasse'}
+      </h2>
+      <p class="mt-6 text-slate-700 md:mx-auto md:mt-8 md:max-w-3xl md:text-center xl:mx-0 xl:text-left xl:text-lg">
+        {$language === 'en' ? 
+          "Here is where it all started, being supported by ETH Zurich as a student project, Polyglace was Bongusto's first location in Zurich. ETH is our home and this spot is dear to us. Every summer, we bring some exam relief to students with our stand. 12 flavors new each day, along with drinks and smoothies." : 
+          "Hier hat alles angefangen, unterstützt von der ETH Zürich als Studentenprojekt, war Polyglace Bongustos erster Standort in Zürich. Die ETH ist unser Zuhause, und dieser Ort liegt uns am Herzen. Jeden Sommer bringen wir den Studierenden mit unserem Stand etwas Erleichterung in der Prüfungszeit. 12 täglich wechselnde Geschmacksrichtungen, dazu Getränke und Smoothies."
+        }
+      </p>
+    </div>
+  </div>
+
+  <div class="pb-10">
+    <div class="relative mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+      <div class="absolute bottom-0 right-6 hidden w-1/3 bg-gray-secondary-100 md:block lg:right-12 xl:-right-0 xl:w-full xl:max-w-xl 2xl:-right-32 2xl:max-w-[640px]">
+        <img src="images/polyterasse.jpg" class="h-auto w-full object-cover rounded-lg" alt="Polyterasse Location Image" />
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+
   
   <section class="relative overflow-hidden bg-white pt-16 md:pt-20 xl:pt-32 pb-16">
     <div class="relative mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
