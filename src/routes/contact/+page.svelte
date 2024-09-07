@@ -1,6 +1,7 @@
 <script>
   import { language } from '$lib/stores/languages';
   import { onMount } from 'svelte';
+  import { Turnstile } from 'svelte-turnstile';
 
   let lang;
   // let currentLanguage;
@@ -146,6 +147,7 @@ onDestroy(() => {
               
                 <input type="hidden" name="replyTo" value="@"> <!-- Optional -->
                 <input type="hidden" name="redirectTo" value="https://bongusto.me"> <!-- Optional -->
+                <Turnstile siteKey="0x4AAAAAAAi58QL8u9vTqIhY" theme="dark" />
                 
                 <div>
                   <button type="submit" class="group inline-flex w-full items-center justify-center border border-slate-800 px-5 py-2.5 text-base font-medium text-slate-800 duration-150 ease-in-out hover:bg-slate-800 hover:text-white lg:w-auto">
