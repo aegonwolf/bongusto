@@ -34,8 +34,8 @@ onDestroy(() => {
           class="mx-auto mt-5 max-w-xl text-center text-lg leading-relaxed text-slate-700 sm:mt-6"
         >
           {lang === 'en'
-            ? 'Lorem ipsum dolor sit amet dapibus fusce sed. Aliquet porta bibendum est platea fermentum tempus egestas.'
-            : 'Lorem ipsum dolor sit amet dapibus fusce sed. Aliquet porta bibendum est platea fermentum tempus egestas.'}
+            ? 'Leave us a message.'
+            : 'Hinterlassen Sie eine Nachricht.'}
         </p>
       </div>
     </div>
@@ -75,8 +75,8 @@ onDestroy(() => {
               </h2>
               <p class="mt-3 max-w-sm leading-relaxed text-slate-600">
                 {lang === 'en'
-                  ? 'Lorem ipsum dolor sit amet aliqua vitae curabitur libero urna dolore orci adipiscing.'
-                  : 'Lorem ipsum dolor sit amet aliqua vitae curabitur libero urna dolore orci adipiscing.'}
+                  ? 'Feel Free to drop us a message.'
+                  : 'Bitte hinterlassen Sie eine Nachricht.'}
               </p>
             </div>
 
